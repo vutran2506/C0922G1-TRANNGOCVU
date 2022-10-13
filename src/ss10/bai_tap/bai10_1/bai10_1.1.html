@@ -8,10 +8,11 @@
 <script>
     let i
     for (i=0;i<100;i++){
-       document.write(i+"<br>")
-        if(i==99) {
-            alert("hoàn thành")
-        }
+
+        if(i !== 99) {
+            document.write(i+"<br>")
+        }  else
+            document.write( "hoàn thành"+"<br>")
     }
 </script>
 </body>
