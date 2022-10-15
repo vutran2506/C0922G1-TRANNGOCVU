@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mamgA= ["s","c","s","2","6","1"]
+    let dau = 0
+    let cuoi = 5
+while (dau<cuoi){
+let b= mamgA[dau]
+    mamgA[dau]=mamgA[cuoi]
+    mamgA[cuoi] = b
+    dau++
+    cuoi--
+    }document.write(mamgA)
+</script>
+</body>
+</html>

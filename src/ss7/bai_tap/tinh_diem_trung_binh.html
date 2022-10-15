@@ -17,11 +17,11 @@
 <button onclick="ketQua()">submit</button>
 <script>
     function ketQua() {
-        let ly= document.getElementById('diemly').value;
-        let hoa= document.getElementById('diemhoa').value;
-        let sinh= document.getElementById('diemsinh').value;
+        let diemly= document.getElementById('diemly').value;
+        let diemHoa= document.getElementById('diemhoa').value;
+        let diemSinh= document.getElementById('diemsinh').value;
         let ketQua
-        ketQua=(parseFloat(ly)+parseFloat(hoa)+parseFloat(sinh))/3
+        ketQua=(parseFloat(diemly)+parseFloat(diemHoa)+parseFloat(diemSinh))/3
         document.getElementById('diemTrungBinh').value=ketQua;
     }
 </script>

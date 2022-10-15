@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    let num = prompt("Nhập chiều dài của mảng");
+    for (i = 0; i < num; i++) {
+        mang[i] = prompt("Nhập các phần tử vào mảng [ " + i + " ]");
+    }
+
+     mang.sort(function (a,b) {
+         if (a < b) {
+             return 1;
+         }
+         if (a > b) {
+             return -1;
+         }
+         return 0;
+     });
+     document.write(mang)
+</script>
+</body>
+</html>
