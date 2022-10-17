@@ -7,10 +7,10 @@
 <body>
 <script>
 let nhapSoTu =prompt("Nhập chuỗi các từ");
-let mang = nhapSoTu.split("");
-let count =1
+let mang = nhapSoTu.split(" ");
+let count =0;
     for (i=0;i<mang.length;i++){
-        if(mang[i]== " "){
+        if(mang[i]!= ""){
             count +=1
         }
     }document.write("Số từ trong chuỗi là:    "+count)
