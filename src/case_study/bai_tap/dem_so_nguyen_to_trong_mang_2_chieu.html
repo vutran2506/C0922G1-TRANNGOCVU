@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let mang1 = prompt("Nhập các phần tử trong mảng1").split("");
+    let mang2 = prompt("Nhập các phần tử tronh mảng 2").split("");
+    let mang = [mang1,mang2];
+    let result = 0;
+    let count = 0;
+    let a = 0;
+    for (i=0;i<mang.length;i++){
+        for (j=0;j<mang[i].length;j++){
+            for (let k = 1; k <= parseInt(mang[i][j]) ; k++) {
+            if(parseInt(mang[i][j]) % k === 0){
+                a++;
+            }
+        }
+        if( a === 2){
+            result = parseInt(mang[i][j]);
+            count +=1;
+            document.write("Các số nguyên tố là"+result+"<br>");
+        }
+            a=0;
+    }
+
+    }document.write("Có " + count+ " số nguyên tố trong mảng" )
+
+</script>
+</body>
+</html>

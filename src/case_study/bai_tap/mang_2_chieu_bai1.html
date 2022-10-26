@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = prompt("Nhập chiều dài mảng 1")
+    let mang1 = [];
+    for (let i = 0; i < num1; i++) {
+        mang1[i] = +prompt("Nhập phần tử mảng1 ");
+    }
+    document.write(mang1+"<br>")
+    let num2 = prompt("Nhập chiều dài mảng 2")
+    let mang2 = [];
+
+    for (let i = 0; i < num2; i++) {
+        mang2[i] = +prompt("Nhập phần tử mảng 2");
+    } document.writeln(mang2+"<br>")
+    let mang = [mang1,mang2];
+    let result = 0;
+    for (let i=0;i<mang.length;i++){
+        for (let j=0;j<mang[i].length;j++){
+          if(mang[i][j]%2==0){
+              result += mang[i][j];
+          }
+        }
+    } document.write("Tổng các số chẵn trong mãng 2 chiều là:   "+result);
+
+</script>
+</body>
+</html>
