@@ -7,6 +7,7 @@
 <body>
 <script>
     function timSoNguyenTo(mang) {
+
         let result = [];
         let count = 0;
         let a = 0;
@@ -24,12 +25,19 @@
                 a = 0;
             }
         }
-        console.log(count)
         return document.write("Các số nguyên tố là" + result + "<br>" + "Có " + count + " số nguyên tố trong mảng");
     }
 
-    let mang1 = prompt("Nhập các phần tử trong mảng1").split("");
-    let mang2 = prompt("Nhập các phần tử tronh mảng 2").split("");
+    let num1 = prompt("Nhập chiều dài mảng 1")
+    let mang1 = [];
+    for (let i = 0; i < num1; i++) {
+        mang1[i] = +prompt("Nhập phần tử mảng1 ");
+    }
+    let num2 = prompt("Nhập chiều dài mảng 2")
+    let mang2 = [];
+    for (let i = 0; i < num2; i++) {
+        mang2[i] = +prompt("Nhập phần tử mảng 2");
+    }
     let mang = [mang1, mang2];
     timSoNguyenTo(mang)
 
